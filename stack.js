@@ -1,18 +1,18 @@
 function createStack() {
-  let array = [];
+  const stack = [];
 
   return {
-    push: function(item) {
-      array.push(item);
+    push: (item) => {
+      stack.push(item);
     },
-    pop: function() {
-      return array.splice(-1, 1)[0];
+    pop: () => {
+      return stack.splice(-1, 1)[0];
     },
-    peek: function() {
-      return array[array.length - 1];
+    peek: () => {
+      return stack[stack.length - 1];
     },
-    size: function() {
-      return array.length;
+    size: () => {
+      return stack.length;
     }
   }
 }
