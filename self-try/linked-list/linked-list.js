@@ -109,11 +109,4 @@ function createLinkedList() {
   }
 }
 
-const linkedList = createLinkedList();
-linkedList.push('Alice');
-linkedList.push('Bob');
-linkedList.push('Charlie');
-
-console.log(linkedList.get(0));
-
 module.exports = { createLinkedList };
